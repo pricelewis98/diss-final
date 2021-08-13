@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" type =text/css href="{{ url_for('static',filename='style.css')}}">
+<head>
+    <a href="{{ url_for('home')}}">Home</a>&nbsp
+    <a href="{{ url_for('about') }}">patient data</a>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My wonderful site</title>
+</head>
+<body>
+    <div id="header"> Hello</header> </div>
+
+    <div id="content">{% block content%}
+        {% endblock %}
+    </div>
+</body>
+</html>
